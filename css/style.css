@@ -372,25 +372,4 @@ body.bridesmaid-page {
     .bridesmaid-page body {
         height: auto;
     }
-
-    .bridesmaid-page header {
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        top: 0;
-    }
-
-    .bridesmaid-page header .container {
-        height: 50px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-
-    .bridesmaid-page header #branding img.animated-gif {
-        height: 60px;
-    }
-
-    .bridesmaid-page .image-container {
-        margin-top: 70px;
-    }
 }
