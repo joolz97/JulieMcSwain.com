@@ -327,4 +327,70 @@ header a:hover{
         max-width: 100%;
         min-width: 0;
     }
+
+    /* Mobile: Image fills screen width */
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Desktop: Image scrollable */
+@media (min-width: 769px) {
+    .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+/* Bridesmaid Pages */
+body.bridesmaid-page {
+    background-image: url('../img/bridesmaidbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .bridesmaid-page html {
+        height: auto;
+    }
+
+    .bridesmaid-page body {
+        height: auto;
+    }
+
+    .bridesmaid-page header {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+    }
+
+    .bridesmaid-page header .container {
+        height: 50px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .bridesmaid-page header #branding img.animated-gif {
+        height: 60px;
+    }
+
+    .bridesmaid-page .image-container {
+        margin-top: 70px;
+    }
 }
